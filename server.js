@@ -6,6 +6,7 @@ const morgan = require('morgan');
 const uuid = require('uuid');
 const mongoose = require('mongoose');
 const {Bookmarks} = require('./models/bookmarkModel');
+const {DATABASE_URL, PORT} = require( './config' );
 
 app.use(morgan('dev'));
 app.use(express.static('public'));
