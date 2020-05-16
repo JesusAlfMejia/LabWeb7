@@ -10,7 +10,7 @@ const {DATABASE_URL, PORT} = require( './config' );
 
 app.use(morgan('dev'));
 app.use(express.static('public'));
-app.listen(8080, () => {
+app.listen(PORT, () => {
     console.log("This server is running on port 8080");
     new Promise((resolve, reject) =>{
         const settings = {
