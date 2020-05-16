@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 const {Bookmarks} = require('./models/bookmarkModel');
 
 app.use(morgan('dev'));
-
+app.use(express.static('public'));
 app.listen(8080, () => {
     console.log("This server is running on port 8080");
     new Promise((resolve, reject) =>{
@@ -17,7 +17,7 @@ app.listen(8080, () => {
             useUnifiedTopology: true,
             useCreateIndex: true
         };
-        mongoose.connect('mongodb://localhost/bookmarksdb', settings, (err) => {
+        mongoose.connect(DATABASE_URL, settings, (err) => {
             if(err){
                 return reject(err);
             }

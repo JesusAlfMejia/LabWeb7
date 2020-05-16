@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Bookmarks app</title>
+  <meta name="This app was made for the 8th Laboratory of the Web Development class" content="Bookmarks app">
+  <meta name="Jesus Mejia">
+
+  <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <ul id="bookmarkList">
+    </ul>
+    <form class="getForm">
+        <h2>Get bookmark by title</h2>
+        <div class="entries">
+            <label>Title</label><br>
+            <input type="text" id="getTitle">
+        </div>
+        <button type="submit">Search bookmark</button>
+    </form>
+    <form class="postForm">
+        <h2>Post bookmark</h2>
+        <div class="entries">
+            <label>Title</label><br>
+            <input type="text" id="postTitle">
+        </div>
+        <div class="entries">
+            <label>Description</label><br>
+            <input type="text" id="postDesc">
+        </div>
+        <div class="entries">
+            <label>URL</label><br>
+            <input type="text" id="postUrl">
+        </div>
+        <div class="entries">
+            <label>Rating</label><br>
+            <input type="text" id="postRating">
+        </div>
+        <button type="submit">Add bookmark</button>
+    </form>
+    <form class="updateForm">
+        <h2>Update bookmark</h2>
+        <div class="entries">
+            <label>ID</label><br>
+            <input type="text" id="updateId">
+        </div>
+        <div class="entries">
+            <label>Title</label><br>
+            <input type="text" id="updateTitle">
+        </div>
+        <div class="entries">
+            <label>Description</label><br>
+            <input type="text" id="updateDesc">
+        </div>
+        <div class="entries">
+            <label>URL</label><br>
+            <input type="text" id="updateUrl">
+        </div>
+        <div class="entries">
+            <label>Rating</label><br>
+            <input type="text" id="updateRating">
+        </div>
+        <button type="submit">Update bookmark</button>
+    </form>
+    <form class="deleteForm">
+        <h2>Delete bookmark</h2>
+        <div class="entries">
+            <label>ID</label><br>
+            <input type="text" id="deleteId">
+        </div>
+        <button type="submit">Delete bookmark</button>
+    </form>
+    <script src="./js/index.js"></script>
+</body>
+</html>
